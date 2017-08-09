@@ -18,9 +18,19 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 #include "r_b_tree.h"
 
 
-void main(int argc,char argc[])
-{
-    initroot(root);
+
+int main(int argc,char **argv)
+{   
+    struct _rb_tree_node *p=null;
+
+    initroot(&p,10);
+    
+    insert(p,2);
+    //showinfo(p);
+    print(p);
+   
+   
+    showinfo(p);
      
-    return;
+    return 0;
 }
